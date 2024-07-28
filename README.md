@@ -13,7 +13,8 @@ rgb(11,130,186) = light blue
 
 
 # Telahon
-
+Added Login+SignUp 
+Added MongoDB URL + Models
 
 # Sharon
 
