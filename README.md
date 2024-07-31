@@ -15,6 +15,7 @@ rgb(11,130,186) = light blue
 # Telahon
 Added Login+SignUp 
 Added MongoDB URL + Models
+Added 2 simple templates 1 on react 1 on js/html/css
 
 # Sharon
 

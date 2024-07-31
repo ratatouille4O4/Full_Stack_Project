@@ -1,0 +1,19 @@
+body {
+    background: radial-gradient(25% 25% at 25% 25%, #180a22 99%, rgba(0, 0, 0, 0) 101%), 
+                radial-gradient(50% 50%, #5b42f3 98%, rgba(0, 0, 0, 0)) 0 0 / 60px 60px, 
+                repeating-conic-gradient(#5b42f3 0 50%, #180a22 0 100%) 30px 0 / 120px 60px;
+    color: #fff;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #180a22;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #5b42f3;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  

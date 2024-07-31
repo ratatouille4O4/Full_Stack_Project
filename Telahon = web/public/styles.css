@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 100%;
+    --sz: 15px;
+    --c0: #000;
+    --c1: #c71175;
+    --ts: 50% / calc(var(--sz) * 8) calc(var(--sz) * 16);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    --dot: var(--c1) 0 calc(var(--sz) * 0.78),
+        #fff0 calc(calc(var(--sz) * 0.78) + 1px) 100%;
+    --dot2: radial-gradient(circle at 90% 0%, var(--dot)) var(--ts),
+        radial-gradient(circle at 65% 0%, var(--dot)) var(--ts),
+        radial-gradient(circle at 40% 0%, var(--dot)) var(--ts),
+        radial-gradient(circle at 15% 0%, var(--dot)) var(--ts);
+    --cg1: conic-gradient(from -90deg at 5% 51%, var(--c0) 0 90deg, #fff0 0 100%)
+        var(--ts);
+    --cg2: conic-gradient(from -90deg at 25% 50%, var(--c1) 0 90deg, #fff0 0 100%)
+        var(--ts);
+    --cg3: conic-gradient(
+            from -90deg at 30% 38.5%,
+            var(--c0) 0 90deg,
+            #fff0 0 100%
+        )
+        var(--ts);
+    --cg4: conic-gradient(
+            from -90deg at 50% 37.5%,
+            var(--c1) 0 90deg,
+            #fff0 0 100%
+        )
+        var(--ts);
+    --cg5: conic-gradient(from -90deg at 55% 26%, var(--c0) 0 90deg, #fff0 0 100%)
+        var(--ts);
+    --cg6: conic-gradient(from -90deg at 75% 25%, var(--c1) 0 90deg, #fff0 0 100%)
+        var(--ts);
+    --cg7: conic-gradient(
+            from -90deg at 80% 13.5%,
+            var(--c0) 0 90deg,
+            #fff0 0 100%
+        )
+        var(--ts);
+    --cg8: conic-gradient(
+            from -90deg at 100% 12.5%,
+            var(--c1) 0 90deg,
+            #fff0 0 100%
+        )
+        var(--ts);
+
+    background: var(--dot2), var(--dot2),
+        radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
+        radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
+        radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
+        radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
+        radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
+        radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
+        radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
+        radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
+        var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
+        var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
+        var(--cg7), var(--cg8), var(--cg8),
+        linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
+        linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
+        repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
+}
+
+/* General Page Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #c71175;
+    outline: none;
+}
+
+form button {
+    background: #c71175;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #a00d62;
+}
+
+form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+form p a {
+    color: #c71175;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
