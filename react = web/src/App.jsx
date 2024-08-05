@@ -16,7 +16,7 @@ function App() {
         <Route path="/product/:id" component={ProductDetail} />
         <Route path="/cart" component={Cart} />
         <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
+        {/* <Route path="/register" component={Register} /> */}
       </Switch>
     </Router>
   );
